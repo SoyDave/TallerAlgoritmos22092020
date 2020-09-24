@@ -1,0 +1,36 @@
+<!-- Realizar un algoritmo que lea un número por teclado. 
+En caso de que ese número sea 0 o menor que 0, se saldrá del programa imprimiendo antes un mensaje de error. 
+Si es mayor que 0, se deberá calcular su cuadrado y la raiz cuadrada del mismo, 
+visualizandoel numero que ha tecleado el usuario y su resultado (“Del numero X, 
+su potencia es X y su raiz X” ). Para calcular la raiz cuadrada se puede usar 
+la función interna RAIZ(X)  o con una potencia de 0,5. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>    
+
+  <script language="JavaScript">
+
+  let numeroUno;
+
+  numeroUno = parseFloat (prompt('Ingrese un numero:'));
+
+  if (numeroUno  <= 0){    
+    document.write("Error: el numero no debe ser menor o igual a cero");
+  }
+  else if (numeroUno > 0){
+    let raiz = Math.sqrt(numeroUno);
+    let cuadrado = Math.pow(numeroUno, 2);
+    document.write('la raiz cuadrada del numero: ' + numeroUno + " " + 'es: ' + raiz + " " + 'y su cuadrado: ' + cuadrado); 
+  }
+  
+  </script>
+  
+
+</body>
+</html>
