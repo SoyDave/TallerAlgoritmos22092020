@@ -1,0 +1,37 @@
+<!--Algoritmo que nos diga si una persona puede acceder a cursar un ciclo formativo de grado superior o no. 
+Para acceder a un grado superior, si se tiene un titulo de bachiller, en caso de no tenerlo, se puede acceder si hemos superado una prueba de acceso.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Once</title>
+</head>
+<body>
+
+    <script lenguaje = "JavaScript">
+
+        let bachiller;
+
+        bachiller = prompt("usted esta titulado como bachiller, escriba '1 para si' o '2 para no' ");
+
+        if (bachiller == 1){
+            document.write("usted puede matricularse");
+
+        }else if (bachiller == 2) {
+            
+            let examen;
+            examen = prompt("usted supero la prueba de acceso, escriba '1 para si' o '2 para no' ");
+
+            if (examen == 1){
+                document.write("usted ahora puede matricularse");
+            }else{
+                document.write("lo sentimos puede presentar el examen en la proxima convocatoria");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
