@@ -2,10 +2,9 @@
 
 let numeroInicial = 0, numeroFinal = 8;
 
-while (numeroInicial <= numeroFinal) {
-    let cuadrado;    
+while (numeroInicial <= numeroFinal) {      
     numeroInicial += 1;
-    console.log(cuadrado = Math.pow(numeroInicial, 2));
+    console.log(Math.pow(numeroInicial, 2));
 }
 
 
